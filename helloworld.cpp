@@ -11,10 +11,15 @@ int main() {
   // cout << "My name is Richard." << endl;
 
   // Drawing a shape
-  cout << "   /｜" << endl;
-  cout << "  / ｜" << endl;
-  cout << " /  ｜" << endl;
-  cout << "/___｜" << endl;
+  // cout << "   /｜" << endl;
+  // cout << "  / ｜" << endl;
+  // cout << " /  ｜" << endl;
+  // cout << "/___｜" << endl;
+
+  // Creating variables
+  
+  cout << "My name is Richard." << endl;
+  cout << "I am 20 years old." << endl;
 
   return 0;
 }
