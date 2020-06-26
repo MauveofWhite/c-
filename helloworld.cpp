@@ -17,7 +17,9 @@ int main() {
   // cout << "/___｜" << endl;
 
   // Creating variables
-  
+  string characterName = 'Richard';
+  int characterAge;
+  characterAge = 20
   cout << "My name is Richard." << endl;
   cout << "I am 20 years old." << endl;
 
