@@ -16,11 +16,17 @@ int main() {
   // cout << " /  ｜" << endl;
   // cout << "/___｜" << endl;
 
-  // Creating variables
-  string characterName = "Richard";
-  int characterAge = 20;
-  cout << "My name is " << characterName << "." << endl;
-  cout << "I am " << characterAge << " years old." << endl;
+  // // Creating variables
+  // string characterName = "Richard";
+  // int characterAge = 20;
+  // cout << "My name is " << characterName << "." << endl;
+  // cout << "I am " << characterAge << " years old." << endl;
+
+  // Data Types
+  
+
+
+
 
   return 0;
 }
