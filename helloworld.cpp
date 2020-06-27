@@ -30,11 +30,15 @@ int main() {
   // double gpa = -4.5 // can store MORE decimal points than float
   // boolean isMale = True;
 
-  // C++ endl logic
-  cout << "Hello, world!"; // did not start a new line
-  cout << "Hello, world! \n"; // \n will start a new line
-  cout << "My name is Richard. \n" << endl;
+  // // C++ endl logic
+  // cout << "Hello, world!"; // did not start a new line
+  // cout << "Hello, world! \n"; // \n will start a new line
+  // cout << "My name is Richard. \n" << endl;
 
+  // String functions
+  string phrase = "Richard";
+  cout << phrase.length() << endl;
+  cout << phrase[0] << endl;
 
   return 0;
 }
