@@ -39,6 +39,10 @@ int main() {
   string phrase = "Richard";
   cout << phrase.length() << endl;
   cout << phrase[0] << endl;
+  phrase[0] = 'B';
+  cout << phrase[0] << endl;
+
+  cout << phrase.find() << endl;
 
   return 0;
 }
