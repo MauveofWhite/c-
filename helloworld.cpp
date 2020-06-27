@@ -4,6 +4,15 @@
 
 using namespace std;
 
+// // 1st way: functions creating before calling it
+// void sayHi(string name, int age) {
+//   cout << "Hello, " << name << endl;
+//   cout << "You are " << age << " years old." << endl;
+// }
+
+// 2nd: Create an abstract and complete it below.
+void sayHi(string name, int age);
+
 int main() {
   // cout: console out
   // endl: end line
@@ -66,13 +75,72 @@ int main() {
   // cout << fmax(3, 10) << endl; // return the larger elem (10)
   // cout << fmin(3, 10) << endl; // 3. Can only take 2 elems.
 
-  // Prompting
-  int age;
-  cout << "Enter your age: ";
-  cin >> age;
+  // // Prompting
+  // int age; // if char age, will return first char of input
+  // cout << "Enter your age: ";
+  // cin >> age;
+  //
+  // cout << "You are " << age << " years old." << endl;
+  //
+  // string name; // if char age, will return first char of input
+  // cout << "Enter your name: ";
+  // getline(cin, name);
+  //
+  // cout << "Hello, " << name << "." << endl;
 
-  cout << "You are " << age << " years old." << endl;
+  // // Build a calculator (user input)
+  // double num1, num2; // declare variables easily
+  // cout << "Enter first number: ";
+  // cin >> num1;
+  // cout << "Enter second number: ";
+  // cin >> num2;
+  //
+  // cout << num1 + num2 << endl;
+
+  // // Build a mad libs game
+  // string color, pluralNoun, celebrity;
+  //
+  // cout << "Enter a color: ";
+  // getline(cin, color);
+  // cout << "Enter a plural noun: ";
+  // getline(cin, pluralNoun);
+  // cout << "Enter a celebrity: ";
+  // getline(cin, celebrity);
+  //
+  // cout << "Roses are " << color << endl;
+  // cout << pluralNoun << " are blue" << endl;
+  // cout << "I love " << celebrity << endl;
+
+  // // Arrays
+  // // different with java, we put [] after var name.
+  // int luckyNums[] = {7, 6, 49, 24}; // use {} to initial elems
+  // cout << luckyNums[3] << endl; // 24
+  // luckyNums[3] = 9;
+  // cout << luckyNums[3] << endl; // 9
+  //
+  // int nums[20];
+  // cout << nums[3] << endl; // 0
+  // nums[3] = 9;
+  // cout << nums[3] << endl; // 9
+
+  // // Functions
+  // cout << "Before \n";
+  // sayHi("Richard", 60);
+  // sayHi("Jason", 32);
+  // sayHi("Abby", 48);
+  // cout << "After \n";
+
+
+
+
+
 
 
   return 0;
 }
+
+// // 2nd
+// void sayHi(string name, int age) {
+//   cout << "Hello, " << name << endl;
+//   cout << "You are " << age << " years old." << endl;
+// }
