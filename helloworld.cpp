@@ -222,25 +222,27 @@ int main() {
   // cout << power(2, 0) << endl;
   // cout << power(2, 3) << endl;
 
-  // 2d arrays and nested for Loops
-  // The numbers in [] is pretty important
-  int numberGrid[3][2] = {
-                            {1, 2},
-                            {3, 4},
-                            {5, 6}
-                        };
+  // // 2d arrays and nested for Loops
+  // // The numbers in [] is pretty important
+  // int numberGrid[3][2] = {
+  //                           {1, 2},
+  //                           {3, 4},
+  //                           {5, 6}
+  //                       };
+  //
+  // // only prints location in memory
+  // cout << numberGrid << endl;
+  //
+  // cout << numberGrid[1][0] << endl; // 3
+  //
+  // for (int i = 0; i < 5; i++) {
+  //   for (int j = i; j < 5; j++) {
+  //     cout << '*';
+  //   }
+  //   cout << '\n';
+  // }
 
-  // only prints location in memory
-  cout << numberGrid << endl;
 
-  cout << numberGrid[1][0] << endl; // 3
-
-  for (int i = 0; i < 5; i++) {
-    for (int j = i; j < 5; j++) {
-      cout << '*';
-    }
-    cout << '\n';
-  }
 
   return 0;
 }
