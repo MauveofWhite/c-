@@ -12,6 +12,8 @@ using namespace std;
 
 // 2nd: Create an abstract and complete it below.
 void sayHi(string name, int age);
+int getMax(int num1, int num2, int num3);
+string getDayOfWeek(int dayNum, int startSunday);
 
 int main() {
   // cout: console out
@@ -130,17 +132,112 @@ int main() {
   // sayHi("Abby", 48);
   // cout << "After \n";
 
+  // // If statement
+  // bool isMale = true; // lowercase true
+  // bool isTall = false;
+  //
+  // // logic similar to java
+  // if(isMale && isTall) {
+  //   cout << "You are a tall male." << endl;
+  // }
+  // else if (isMale && !isTall) {
+  //   cout << "You are a short male." << endl;
+  // }
+  // else if (!isMale && isTall) {
+  //   cout << "You are tall but not male." << endl;
+  // } else {
+  //   cout << "You are neither tall nor male." << endl;
+  // }
 
+  // // If statement using comparisons
+  // cout << getMax(3, 5, -8) << endl;
 
+  // // Building a better calculator
+  // double num1, num2, result;
+  // char op;
+  //
+  // cout << "Enter first number: ";
+  // cin >> num1;
+  // cout << "Enter operator: ";
+  // cin >> op;
+  // cout << "Enter second number: ";
+  // cin >> num2;
+  //
+  // if (op == '+') {
+  //   result = num1 + num2;
+  //   cout << result << endl;
+  // } else if (op == '-') {
+  //   result = num1 - num2;
+  //   cout << result << endl;
+  // } else if (op == '*') {
+  //   result = num1 * num2;
+  //   cout << result << endl;
+  // } else if (op == '/') {
+  //   result = num1 / num2;
+  //   cout << result << endl;
+  // } else {
+  //   cout << "Invalid operation." << endl;
+  // }
 
+  // // Switch statements
+  // cout << getDayOfWeek(28, 7) << endl;
 
-
+  // While loops
 
   return 0;
 }
+
+// int getMax(int num1, int num2, int num3) {
+//   if (num1 >= num2 && num1 >= num3) {
+//     return num1;
+//   } else if (num2 >= num1 && num2 >= num3) {
+//     return num2;
+//   } else {
+//     return num3;
+//   }
+// }
 
 // // 2nd
 // void sayHi(string name, int age) {
 //   cout << "Hello, " << name << endl;
 //   cout << "You are " << age << " years old." << endl;
+// }
+
+// string getDayOfWeek(int dayNum, int startSunday) {
+//   string dayName;
+//
+//   // // We need to copy and paste 7 times if use if statement
+//   // if(dayNum == 0) {
+//   //   dayName = "Sunday";
+//   // } // else if == 1 ...
+//
+//   // Switch statements
+//   switch(dayNum % startSunday) {
+//   case 0:
+//     dayName = "Sunday";
+//     break;
+//   case 1:
+//     dayName = "Monday";
+//     break;
+//   case 2:
+//     dayName = "Tuesday";
+//     break;
+//   case 3:
+//     dayName = "Wednesday";
+//     break;
+//   case 4:
+//     dayName = "Thursday";
+//     break;
+//   case 5:
+//     dayName = "Friday";
+//     break;
+//   case 6:
+//     dayName = "Saturday";
+//     break;
+//   // else case
+//   default:
+//     dayName = "Invalid day name";
+//   }
+//
+//   return dayName;
 // }
