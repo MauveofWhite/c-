@@ -228,8 +228,19 @@ int main() {
                             {1, 2},
                             {3, 4},
                             {5, 6}
-                        }
-  
+                        };
+
+  // only prints location in memory
+  cout << numberGrid << endl;
+
+  cout << numberGrid[1][0] << endl; // 3
+
+  for (int i = 0; i < 5; i++) {
+    for (int j = i; j < 5; j++) {
+      cout << '*';
+    }
+    cout << '\n';
+  }
 
   return 0;
 }
