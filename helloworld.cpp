@@ -14,6 +14,7 @@ using namespace std;
 void sayHi(string name, int age);
 int getMax(int num1, int num2, int num3);
 string getDayOfWeek(int dayNum, int startSunday);
+int power(int base, int expo);
 
 int main() {
   // cout: console out
@@ -182,7 +183,46 @@ int main() {
   // // Switch statements
   // cout << getDayOfWeek(28, 7) << endl;
 
-  // While loops
+  // // While loops
+  // // check condition BEFORE execute
+  // int index = 5;
+  // while(index < 5) {
+  //   cout << "WHILE" << endl;
+  //   index++;
+  // }
+  // // check condition AFTER execute
+  // do {
+  //   cout << "DO" << endl;
+  //   index++;
+  // } while(index < 5);
+
+  // // While Loops - Build a Guessing Game
+  // int secretNum = 7;
+  // int guess;
+  //
+  // while(guess != secretNum) {
+  //   cout << "Enter guess: " << endl;
+  //   cin >> guess;
+  //   if (guess < secretNum) {
+  //     cout << "Make a larger guess!" << endl;
+  //   }
+  //   if (guess > secretNum) {
+  //     cout << "Make a smaller guess!" << endl;
+  //   }
+  // }
+  //
+  // cout << "You Win!" << endl;
+
+  // // For Loops
+  // for (int i = 1; i < 3; i++) {
+  //   cout << i << endl;
+  // }
+
+  // // Exponent Functions
+  // cout << power(2, 0) << endl;
+  // cout << power(2, 3) << endl;
+
+
 
   return 0;
 }
@@ -240,4 +280,12 @@ int main() {
 //   }
 //
 //   return dayName;
+// }
+
+// int power(int base, int expo) {
+//   int res = 1;
+//   for (int i = 0; i < expo; i++) {
+//     res = res * base;
+//   }
+//   return res;
 // }
