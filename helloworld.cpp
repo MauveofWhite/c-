@@ -16,6 +16,14 @@ int getMax(int num1, int num2, int num3);
 string getDayOfWeek(int dayNum, int startSunday);
 int power(int base, int expo);
 
+// A little differ to Java
+class Book {
+  public:
+    string title;
+    string author;
+    int pages;
+};
+
 int main() {
   // cout: console out
   // endl: end line
@@ -242,13 +250,41 @@ int main() {
   //   cout << '\n';
   // }
 
-  // Pointers
-  int age = 20;
-  double gpa = 0.1;
-  string name = "Richard";
+  // // Pointers
+  // int age = 20;
+  // double gpa = 0.1;
+  // string name = "Richard";
+  //
+  // // the address will change every time
+  // // we call &age a POINTER
+  // cout << "Age: " << &age << endl;
+  // cout << "GPA: " << &gpa << endl;
+  // cout << "Name:" << &name << endl;
+  //
+  // // int pAge is illegal since &age is not int
+  // int *pAge = &age;
+  // cout << "pAge: " << pAge << endl; // &age
+  // // de-referencing - extract the value in that pointer
+  // cout << "*pAge: " << *pAge << endl; // age (20)
+  // cout << "*&age: " << *&age << endl; // age (20)
 
-  // the address will change every time 
-  cout << "The address of age variable is: " << &age << endl;
+  // Classes and objects
+  // Class is actually a new data type created artificially
+  // Object is the instance of a class
+  Book book1;
+  book1.title = "Harry Potter";
+  book1.author = "JK Rowling";
+  book1.pages = 500;
+
+  cout << book1.title << endl;
+
+  Book book2;
+  book2.title = "Lord of the Rings";
+  book2.author = "Tolkeing";
+  book2.pages = 700;
+
+  cout << book2.title << endl;
+
 
   return 0;
 }
