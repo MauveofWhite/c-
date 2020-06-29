@@ -242,7 +242,13 @@ int main() {
   //   cout << '\n';
   // }
 
+  // Pointers
+  int age = 20;
+  double gpa = 0.1;
+  string name = "Richard";
 
+  // the address will change every time 
+  cout << "The address of age variable is: " << &age << endl;
 
   return 0;
 }
