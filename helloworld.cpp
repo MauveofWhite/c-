@@ -77,8 +77,17 @@ class Movie {
 
     // Function used to modify private variable rating
     void setRating(string aRating) {
-      rating = aRating;
+      if (aRating == "PG-13" || aRating == "E" || aRating == "R") {
+        rating = aRating;
+      } else {
+        rating = "NR";
+      }
     }
+
+    string getRating() {
+      return rating;
+    }
+  // can be created above or below public 
   private:
     string rating;
 };
@@ -362,9 +371,12 @@ int main() {
 
   // Getters and setters
   Movie avengers("The Avengers", "Joss Whedon", "PG-13");
+  // no longer avaliable if private
+  // avengers.rating = "Dog";
+  avengers.setRating("Dog");
 
   // If rating variable is private, no longer avaliable
-  // cout << avengers.rating << endl;
+  cout << avengers.getRating() << endl;
 
 
 
