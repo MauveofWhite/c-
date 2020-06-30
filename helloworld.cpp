@@ -42,7 +42,7 @@ class Book {
       cout << "Creating Object w/o author and pages..." << endl;
       title = aTitle;
     }
-};
+}; // class ends with a semi-colon
 
 class Student {
   public:
@@ -53,6 +53,10 @@ class Student {
       name = aName;
       major = aMajor;
       gpa = aGpa;
+    }
+
+    bool hasHonors() {
+
     }
 };
 
@@ -330,7 +334,7 @@ int main() {
   Student student1("Jim", "Business", 2.4);
   Student student2("Pam", "Art", 3.6);
 
-  
+
 
   return 0;
 }
