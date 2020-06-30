@@ -64,6 +64,19 @@ class Student {
     }
 };
 
+// Getters and setters
+class Movie {
+  public:
+    string title;
+    string director;
+    string rating;
+    Movie (string aTtitle, string aDirector, string aRating) {
+      title = aTtitle;
+      director = aDirector;
+      rating = aRating;
+    }
+};
+
 int main() {
   // cout: console out
   // endl: end line
@@ -334,12 +347,14 @@ int main() {
   // Book book2("Lord of the Ring", "Tolkeing", 700);
   // cout << book2.title << endl;
 
-  // Object functions
-  Student student1("Jim", "Business", 2.4);
-  Student student2("Pam", "Art", 3.6);
+  // // Object functions
+  // Student student1("Jim", "Business", 2.4);
+  // Student student2("Pam", "Art", 3.6);
+  //
+  // cout << student1.hasHonors() << endl;
+  // cout << student2 .hasHonors() << endl;
 
-  cout << student1.hasHonors() << endl;
-  cout << student2.hasHonors() << endl;
+  // Getters and setters
 
   return 0;
 }
