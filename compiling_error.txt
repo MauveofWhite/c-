@@ -1,7 +1,0 @@
-/Users/richa/Desktop/c++/helloworld.cpp:361:20: error: 'rating' is a private member of 'Movie'
-  cout << avengers.rating << endl;
-                   ^
-/Users/richa/Desktop/c++/helloworld.cpp:78:12: note: declared private here
-    string rating;
-           ^
-1 error generated.
