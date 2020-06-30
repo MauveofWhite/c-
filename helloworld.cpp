@@ -93,6 +93,7 @@ class Movie {
 };
 
 // Inheritance
+// Superclass
 class Chef {
   public:
     void makeChicken() {
@@ -107,8 +108,16 @@ class Chef {
 };
 
 // We want this chef can do everything normal chef can do
+// Sub-class
 class ItalianChef : public Chef{
-  
+  public:
+    void makePasta() {
+      cout << "The chef makes pasta." << endl;
+    }
+    // Override
+    void makeSpecialDish() {
+      cout << "The chef makes chicken parm." << endl;
+    }
 };
 
 int main() {
@@ -400,6 +409,15 @@ int main() {
   // Inheritance
   Chef chef;
   chef.makeChicken();
+
+  ItalianChef italianChef;
+  italianChef.makeChicken();
+  italianChef.makePasta();
+  // no good. normal chef does not have this method
+  // chef.makePasta();
+
+  chef.makeSpecialDish();
+  italianChef.makeSpecialDish();
 
 
 
