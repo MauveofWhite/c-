@@ -87,9 +87,28 @@ class Movie {
     string getRating() {
       return rating;
     }
-  // can be created above or below public 
+  // can be created above or below public
   private:
     string rating;
+};
+
+// Inheritance
+class Chef {
+  public:
+    void makeChicken() {
+      cout << "The chef makes chicken." << endl;
+    }
+    void makeSalad() {
+      cout << "The chef makes salad." << endl;
+    }
+    void makeSpecialDish() {
+      cout << "The chef makes BBQ Ribs." << endl;
+    }
+};
+
+// We want this chef can do everything normal chef can do
+class ItalianChef : public Chef{
+  
 };
 
 int main() {
@@ -369,14 +388,18 @@ int main() {
   // cout << student1.hasHonors() << endl;
   // cout << student2 .hasHonors() << endl;
 
-  // Getters and setters
-  Movie avengers("The Avengers", "Joss Whedon", "PG-13");
-  // no longer avaliable if private
-  // avengers.rating = "Dog";
-  avengers.setRating("Dog");
+  // // Getters and setters
+  // Movie avengers("The Avengers", "Joss Whedon", "PG-13");
+  // // no longer avaliable if private
+  // // avengers.rating = "Dog";
+  // avengers.setRating("Dog");
+  //
+  // // If rating variable is private, no longer avaliable
+  // cout << avengers.getRating() << endl;
 
-  // If rating variable is private, no longer avaliable
-  cout << avengers.getRating() << endl;
+  // Inheritance
+  Chef chef;
+  chef.makeChicken();
 
 
 
