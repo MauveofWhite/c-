@@ -1,7 +1,7 @@
-/Users/richa/Desktop/c++/helloworld.cpp:72:10: error: use of undeclared identifier 'age'
-  cin >> age;
-         ^
-/Users/richa/Desktop/c++/helloworld.cpp:74:25: error: use of undeclared identifier 'age'
-  cout << "You are " << age << " years old." << endl;
-                        ^
-2 errors generated.
+/Users/richa/Desktop/c++/helloworld.cpp:361:20: error: 'rating' is a private member of 'Movie'
+  cout << avengers.rating << endl;
+                   ^
+/Users/richa/Desktop/c++/helloworld.cpp:78:12: note: declared private here
+    string rating;
+           ^
+1 error generated.

@@ -69,12 +69,18 @@ class Movie {
   public:
     string title;
     string director;
-    string rating;
     Movie (string aTtitle, string aDirector, string aRating) {
       title = aTtitle;
       director = aDirector;
       rating = aRating;
     }
+
+    // Function used to modify private variable rating
+    void setRating(string aRating) {
+      rating = aRating;
+    }
+  private:
+    string rating;
 };
 
 int main() {
@@ -355,6 +361,12 @@ int main() {
   // cout << student2 .hasHonors() << endl;
 
   // Getters and setters
+  Movie avengers("The Avengers", "Joss Whedon", "PG-13");
+
+  // If rating variable is private, no longer avaliable
+  // cout << avengers.rating << endl;
+
+
 
   return 0;
 }
