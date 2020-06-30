@@ -22,6 +22,38 @@ class Book {
     string title;
     string author;
     int pages;
+
+    // Constructor functions
+    // This is called whenever we create a book object
+    Book(string aTitle, string aAuthor, int aPages) {
+      cout << "Creating Object..." << endl;
+      title = aTitle;
+      author = aAuthor;
+      pages = aPages;
+    }
+
+    // We can also have multiple constructor objects
+    Book(string aTitle, string aAuthor) {
+      cout << "Creating Object w/o pages..." << endl;
+      title = aTitle;
+      author = aAuthor;
+    }
+    Book(string aTitle) {
+      cout << "Creating Object w/o author and pages..." << endl;
+      title = aTitle;
+    }
+};
+
+class Student {
+  public:
+    string name;
+    string major;
+    double gpa;
+    Student (string aName, string aMajor, double aGpa) {
+      name = aName;
+      major = aMajor;
+      gpa = aGpa;
+    }
 };
 
 int main() {
@@ -268,23 +300,37 @@ int main() {
   // cout << "*pAge: " << *pAge << endl; // age (20)
   // cout << "*&age: " << *&age << endl; // age (20)
 
-  // Classes and objects
-  // Class is actually a new data type created artificially
-  // Object is the instance of a class
-  Book book1;
-  book1.title = "Harry Potter";
-  book1.author = "JK Rowling";
-  book1.pages = 500;
+  // // Classes and objects
+  // // Class is actually a new data type created artificially
+  // // Object is the instance of a class
+  // Book book1;
+  // book1.title = "Harry Potter";
+  // book1.author = "JK Rowling";
+  // book1.pages = 500;
+  //
+  // cout << book1.title << endl;
+  //
+  // Book book2;
+  // book2.title = "Lord of the Rings";
+  // book2.author = "Tolkeing";
+  // book2.pages = 700;
+  //
+  // cout << book2.title << endl;
 
-  cout << book1.title << endl;
+  // // Constructor Functions
+  // // Can initialize attributes wile creating object
+  // // instead of manually setting up
+  // Book book1("Harry Potter", "JK Rowling", 500);
+  // cout << book1.title << endl;
+  //
+  // Book book2("Lord of the Ring", "Tolkeing", 700);
+  // cout << book2.title << endl;
 
-  Book book2;
-  book2.title = "Lord of the Rings";
-  book2.author = "Tolkeing";
-  book2.pages = 700;
+  // Object functions
+  Student student1("Jim", "Business", 2.4);
+  Student student2("Pam", "Art", 3.6);
 
-  cout << book2.title << endl;
-
+  
 
   return 0;
 }
