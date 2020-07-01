@@ -20,3 +20,5 @@
 # puts ("I am " + character_age + " years old.")
 
 # Data Types
+name = "Richard" # string
+age = 20 # int
