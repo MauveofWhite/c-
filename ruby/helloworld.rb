@@ -19,6 +19,22 @@
 # puts ("Hello, my name is " + character_name)
 # puts ("I am " + character_age + " years old.")
 
-# Data Types
-name = "Richard" # string
-age = 20 # int
+# # Data Types
+# name = "Richard" # string
+# age = 20 # int
+# gpa = 3.1 # float/double
+# isMale = true # boolean
+# flaws = nil # nil - does not have a value (ie. initializaiton only)
+
+# Working with strings
+# String functions:
+phrase = "   UC Berkeley is in UC system   "
+puts phrase.upcase()
+puts phrase.downcase()
+puts phrase.strip() # dealing with leading and trilling whitespaces
+puts phrase.length()
+puts phrase.include? "system" # check if substring is included in phrase
+puts phrase.include? "state"
+puts phrase[4] # "C"
+puts phrase[4,3] # "C B"
+puts phrase.index("B")
