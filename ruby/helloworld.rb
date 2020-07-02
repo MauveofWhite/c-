@@ -200,29 +200,59 @@
 # end
 # puts max(1, 3, -5)
 
-# Building a better calculator
-puts "Enter first number: "
-num1 = gets.chomp().to_f
-puts "Enter an operator: (+, -, *, /, %)"
-op = gets.chomp()
-puts "Enter second number: "
-num2 = gets.chomp().to_f
+# # Building a better calculator
+# puts "Enter first number: "
+# num1 = gets.chomp().to_f
+# puts "Enter an operator: (+, -, *, /, %)"
+# op = gets.chomp()
+# puts "Enter second number: "
+# num2 = gets.chomp().to_f
+#
+# if op == '+'
+#   puts "The result is: "
+#   puts (num1 + num2)
+# elsif op == '-'
+#   puts "The result is: "
+#   puts (num1 - num2)
+# elsif op == '*'
+#   puts "The result is: "
+#   puts (num1 * num2)
+# elsif op == '/'
+#   puts "The result is: "
+#   puts (num1 / num2)
+# elsif op == '%'
+#   puts "The result is: "
+#   puts (num1 % num2)
+# else
+#   puts ("Invalid operator")
+# end
 
-if op == '+'
-  puts "The result is: "
-  puts (num1 + num2)
-elsif op == '-'
-  puts "The result is: "
-  puts (num1 - num2)
-elsif op == '*'
-  puts "The result is: "
-  puts (num1 * num2)
-elsif op == '/'
-  puts "The result is: "
-  puts (num1 / num2)
-elsif op == '%'
-  puts "The result is: "
-  puts (num1 % num2)
-else
-  puts ("Invalid operator")
+# Case expressions (switch)
+def get_day_name(day)
+  day_name = ""
+  d = day.downcase()
+
+  case d
+  when "mon"
+    day_name = "Monday"
+  when "tue"
+    day_name = "Turesday"
+  when "wed"
+    day_name = "Wednesday"
+  when "thu"
+    day_name = "Thursday"
+  when "fri"
+    day_name = "Friday"
+  when "sat"
+    day_name = "Saturday"
+  when "sun"
+    day_name = "Sunday"
+  else # default
+    day_name = "Invalid abbreviation"
+  end
+
+  return day_name
 end
+
+puts get_day_name("mOn")
+puts get_day_name("mOnDaY")
