@@ -57,5 +57,11 @@
 
 # Getting user input
 puts "Enter Your Name: "
-name = gets
-puts ("Hello, " + name)
+# name = gets
+# # This would print "Hello, Richard"
+# #                  ", you are cool!"
+# puts ("Hello, " + name + ", you are cool!")
+# # To avoid this, we do:
+name = gets.chomp()
+# This would print "Hello, Richard, you are cool!"
+puts ("Hello, " + name + ", you are cool!")
