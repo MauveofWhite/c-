@@ -188,14 +188,36 @@
 #   puts "You are not male or not tall or both"
 # end
 
-# If statement using comparison
-def max(num1, num2, num3)
-  if num1 >= num2 and num1 >= num3
-    return num1
-  elsif num2 >= num1 and num2 >= num3
-    return num2
-  else
-    return num3
-  end
+# # If statement using comparison
+# def max(num1, num2, num3)
+#   if num1 >= num2 and num1 >= num3
+#     return num1
+#   elsif num2 >= num1 and num2 >= num3
+#     return num2
+#   else
+#     return num3
+#   end
+# end
+# puts max(1, 3, -5)
+
+# Building a better calculator
+puts "Enter first number: "
+num1 = gets.chomp().to_f
+puts "Enter an operator: (+, -, *, /, %)"
+op = gets.chomp()
+puts "Enter second number: "
+num2 = gets.chomp().to_f
+
+if op == '+'
+  puts (num1 + num2)
+elsif op == '-'
+  puts (num1 - num2)
+elsif op == '*'
+  puts (num1 * num2)
+elsif op == '/'
+  puts (num1 / num2)
+elsif op == '%'
+  puts (num1 % num2)
+else
+  puts ("Invalid operator")
 end
-puts max(1, 3, -5)
