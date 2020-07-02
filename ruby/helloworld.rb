@@ -227,32 +227,64 @@
 #   puts ("Invalid operator")
 # end
 
-# Case expressions (switch)
-def get_day_name(day)
-  day_name = ""
-  d = day.downcase()
+# # Case expressions (switch)
+# def get_day_name(day)
+#   day_name = ""
+#   d = day.downcase()
+#
+#   case d
+#   when "mon"
+#     day_name = "Monday"
+#   when "tue"
+#     day_name = "Turesday"
+#   when "wed"
+#     day_name = "Wednesday"
+#   when "thu"
+#     day_name = "Thursday"
+#   when "fri"
+#     day_name = "Friday"
+#   when "sat"
+#     day_name = "Saturday"
+#   when "sun"
+#     day_name = "Sunday"
+#   else # default
+#     day_name = "Invalid abbreviation"
+#   end
+#
+#   return day_name
+# end
+#
+# puts get_day_name("mOn")
+# puts get_day_name("mOnDaY")
 
-  case d
-  when "mon"
-    day_name = "Monday"
-  when "tue"
-    day_name = "Turesday"
-  when "wed"
-    day_name = "Wednesday"
-  when "thu"
-    day_name = "Thursday"
-  when "fri"
-    day_name = "Friday"
-  when "sat"
-    day_name = "Saturday"
-  when "sun"
-    day_name = "Sunday"
-  else # default
-    day_name = "Invalid abbreviation"
+# # While loops
+# index = 1
+# while index < 5
+#   puts index
+#   index += 1
+# end
+
+# Build a guessing number
+secret_number = 7
+user_guess = nil
+guess_count = 3
+while user_guess != secret_number
+  puts ("You have " + guess_count.to_s + " time(s) left.")
+  puts "Enter a guess: "
+  user_guess = gets.chomp().to_f
+  guess_count -= 1
+
+  if user_guess > secret_number and guess_count != 0
+    puts "Make a smaller guess!"
+  elsif user_guess < secret_number and guess_count != 0
+    puts "Make a larger guess"
+  elsif user_guess == secret_number
+    puts "You Won!"
   end
 
-  return day_name
+  if guess_count <= 0
+    puts "You used all your chances!"
+    puts ("The secret number is " + secret_number.to_s)
+    return
+  end
 end
-
-puts get_day_name("mOn")
-puts get_day_name("mOnDaY")
