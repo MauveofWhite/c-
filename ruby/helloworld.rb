@@ -174,16 +174,28 @@
 # end
 # puts cube(3)[1] # 7
 
-# If statement
-isMale = true
-isTall = false
+# # If statement
+# isMale = true
+# isTall = false
+#
+# if isMale and isTall
+#   puts "You are a tall male"
+# elsif isMale and !isTall
+#   puts "You are a male but not tall"
+# elsif !isMale and isTall
+#   puts "You are not a male and you are tall"
+# else
+#   puts "You are not male or not tall or both"
+# end
 
-if isMale and isTall
-  puts "You are a tall male"
-elsif isMale and !isTall
-  puts "You are a male but not tall"
-elsif !isMale and isTall
-  puts "You are not a male and you are tall"
-else
-  puts "You are not male or not tall or both"
+# If statement using comparison
+def max(num1, num2, num3)
+  if num1 >= num2 and num1 >= num3
+    return num1
+  elsif num2 >= num1 and num2 >= num3
+    return num2
+  else
+    return num3
+  end
 end
+puts max(1, 3, -5)
