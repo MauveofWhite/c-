@@ -39,9 +39,21 @@
 # puts phrase[4,3] # "C B"
 # puts phrase.index("B")
 
-# Working with numbers
-puts -5.86543 # double negative
-puts 5 + 7
-puts 5 / 7
-puts 5.5 * 2.2
-puts 10 % 3
+# # Working with numbers
+# puts -5.86543 # double negative
+# puts 5 + 7
+# puts 5 / 7
+# puts 5.5 * 2.2
+# puts 10 % 3
+#
+# num = -20.487
+# puts num.abs()
+# puts num.abs().round()
+# puts num.abs().ceil()
+# puts num.floor()
+#
+# puts Math.log(36)
+# puts Math.sqrt(36)
+
+# Getting user input
+puts "hello"
