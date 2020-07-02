@@ -151,25 +151,39 @@
 # sayHi # only work when there's defalt value
 # sayHi("Mike", 20)
 
-# return statement
-def cube(num)
-  # will automatically return the last line if no 'return' word
-  num * num * num
-  5
-end
-puts cube(3) # 5
+# # return statement
+# def cube(num)
+#   # will automatically return the last line if no 'return' word
+#   num * num * num
+#   5
+# end
+# puts cube(3) # 5
+#
+# def cube(num)
+#   # will automatically return the last line if no 'return' word
+#   return num * num * num
+#   5
+#   return 5
+#   5
+# end
+# puts cube(3) # 27
+#
+# def cube(num)
+#   # will automatically return the last line if no 'return' word
+#   return num * num * num, 7
+# end
+# puts cube(3)[1] # 7
 
-def cube(num)
-  # will automatically return the last line if no 'return' word
-  return num * num * num
-  5
-  return 5
-  5
-end
-puts cube(3) # 27
+# If statement
+isMale = true
+isTall = false
 
-def cube(num)
-  # will automatically return the last line if no 'return' word
-  return num * num * num, 7
+if isMale and isTall
+  puts "You are a tall male"
+elsif isMale and !isTall
+  puts "You are a male but not tall"
+elsif !isMale and isTall
+  puts "You are not a male and you are tall"
+else
+  puts "You are not male or not tall or both"
 end
-puts cube(3)[1] # 7
