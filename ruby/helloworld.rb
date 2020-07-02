@@ -55,16 +55,27 @@
 # puts Math.log(36)
 # puts Math.sqrt(36)
 
-# Getting user input
-puts "Enter Your Name: "
-# name = gets
-# # This would print "Hello, Richard"
-# #                  ", you are cool!"
+# # Getting user input
+# puts "Enter Your Name: "
+# # name = gets
+# # # This would print "Hello, Richard"
+# # #                  ", you are cool!"
+# # puts ("Hello, " + name + ", you are cool!")
+# # # To avoid this, we do:
+# name = gets.chomp()
+# # This would print "Hello, Richard, you are cool!"
 # puts ("Hello, " + name + ", you are cool!")
-# # To avoid this, we do:
-name = gets.chomp()
-# This would print "Hello, Richard, you are cool!"
-puts ("Hello, " + name + ", you are cool!")
-puts "Enter Your Age: "
-age = gets.chomp()
-puts ("Your name is: " + name + ", and you are " + age + " years old.")
+# puts "Enter Your Age: "
+# age = gets.chomp()
+# puts ("Your name is: " + name + ", and you are " + age + " years old.")
+
+# Build a calculator
+puts "Enter a number: "
+num1 = gets.chomp()
+puts "Enter another number: "
+num2 = gets.chomp()
+# suppose 1 = 3, 2 = 7; converts to string auto, ie. Prints "37"
+puts "The result is: "
+puts (num1 + num2)
+# 3 + 7 = 10
+puts (num1.to_i + num2.to_i)
