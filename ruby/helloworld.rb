@@ -69,13 +69,86 @@
 # age = gets.chomp()
 # puts ("Your name is: " + name + ", and you are " + age + " years old.")
 
-# Build a calculator
-puts "Enter a number: "
-num1 = gets.chomp()
-puts "Enter another number: "
-num2 = gets.chomp()
-# suppose 1 = 3, 2 = 7; converts to string auto, ie. Prints "37"
-puts "The result is: "
-puts (num1 + num2)
-# 3 + 7 = 10
-puts (num1.to_i + num2.to_i)
+# # Build a calculator
+# puts "Enter a number: "
+# num1 = gets.chomp()
+# puts "Enter another number: "
+# num2 = gets.chomp()
+# # suppose 1 = 3, 2 = 7; converts to string auto, ie. Prints "37"
+# puts "The result is: "
+# puts (num1 + num2)
+# # 3 + 7 = 10
+# # to_i or to_f (int vs float)
+# # or num1 = gets.chomp().to_f
+# puts (num1.to_i + num2.to_i)
+
+# # Build a Mab Libs Game
+# puts ("Enter a color: ")
+# color = gets.chomp()
+# puts ("Enter a plural noun: ")
+# pluralNoun = gets.chomp()
+# puts ("Enter a celebrity: ")
+# celebrity = gets.chomp()
+#
+# puts ("The generated poem is: ")
+# puts ("Roses are " + color)
+# puts (pluralNoun + " are blue")
+# puts ("I love " + celebrity)
+
+# Arrays
+# friends = Array["Kevin", "Karen", "Oscar", "Yuri"]
+# # Every element occupies a line
+# puts friends
+# # access a specific element
+# puts friends[1]
+# puts friends[-1] # oscar
+# # slice (start index, number of elements start from that index)
+# puts friends[2,1] # Oscar
+# puts friends[1, 3] # karen, \n oscar, \n yuri
+# friends = Array.new
+# friends[0] = 'Michael'
+# friends[5] = 'Holly'
+# puts friends[0]
+# puts friends[5]
+# puts friends[3] # nothing
+# puts friends.length()
+# puts friends.include? "Michael"
+# puts friends.reverse()
+# friends = Array["Michael", "Karen", "Kate"]
+# puts friends.sort() # alphabeitically
+
+# # Hashes - A type of data structure
+# # can store (key, value) pair
+# # both : and "" work
+# states = {
+#   :Pennsylvania => "PA",
+#   "New York" => "NY",
+#   "Oregon" => "OR",
+#   3 => 'Number'
+# }
+# # Prints this structure {key1 => value1, key2 => value2, ...}
+# puts states
+# # Prints value by giving key
+# puts states["New York"] # NY
+# puts states[1] # if no such key, print an empty line
+# puts states[:Pennsylvania] # PA
+# puts states[3]
+
+# # Methods (functions)
+# # def - end
+# def sayHi
+#   puts "Hello user"
+# end
+# # execute: type method Name
+# puts "top"
+# sayHi
+# puts "bottom"
+# # methods with arguments, also default value
+# def sayHi(name="No name", age=-1)
+#   # puts ("Hello" + 1) illegal
+#   puts ("Hello " + name + ", you are " + age.to_s) # age can't be int
+# end
+# sayHi # only work when there's defalt value
+# sayHi("Mike", 20)
+
+# return statement
