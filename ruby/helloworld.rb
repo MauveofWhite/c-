@@ -209,14 +209,19 @@ puts "Enter second number: "
 num2 = gets.chomp().to_f
 
 if op == '+'
+  puts "The result is: "
   puts (num1 + num2)
 elsif op == '-'
+  puts "The result is: "
   puts (num1 - num2)
 elsif op == '*'
+  puts "The result is: "
   puts (num1 * num2)
 elsif op == '/'
+  puts "The result is: "
   puts (num1 / num2)
 elsif op == '%'
+  puts "The result is: "
   puts (num1 % num2)
 else
   puts ("Invalid operator")
