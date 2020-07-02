@@ -65,3 +65,6 @@ puts "Enter Your Name: "
 name = gets.chomp()
 # This would print "Hello, Richard, you are cool!"
 puts ("Hello, " + name + ", you are cool!")
+puts "Enter Your Age: "
+age = gets.chomp()
+puts ("Your name is: " + name + ", and you are " + age + " years old.")
