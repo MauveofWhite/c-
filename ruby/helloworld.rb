@@ -56,4 +56,6 @@
 # puts Math.sqrt(36)
 
 # Getting user input
-puts "hello"
+puts "Enter Your Name: "
+name = gets
+puts ("Hello, " + name)
